@@ -1,5 +1,5 @@
 <div>
-  <%= attachment_image_tag @post_image, :image %>
+  <%= attachment_image_tag @post_image, :image , :fill, 250, 250, fallback: "no_image.jpg" %>
   <p>ショップ名：<%= @post_image.shop_name %></p>
   <p>説明：<%= @post_image.caption %></p>
   <p>ユーザーネーム：<%= @post_image.user.name %></p>
